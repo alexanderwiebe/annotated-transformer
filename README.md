@@ -17,6 +17,21 @@ Use `requirements.txt` to install library dependencies with pip:
 pip install -r requirements.txt
 ```
 
+# Dev Container (VS Code / Codespaces)
+
+A `.devcontainer` configuration is included. When you open this repository in a Dev Container (locally with the VS Code Dev Containers extension or in GitHub Codespaces) the Python dependencies from `requirements.txt` (including `jupytext`, `black`, `flake8`) are installed automatically.
+
+Inside the container you can immediately run:
+
+```
+make notebook
+```
+
+If you modify `requirements.txt`, reopen/rebuild the container (or run the `Dev Containers: Rebuild Container` command) so the new dependencies install. You can also manually re-run installation with:
+
+```
+pip install -r requirements.txt
+```
 
 # Notebook Setup
 

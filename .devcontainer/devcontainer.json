@@ -41,6 +41,7 @@
     "5000": {"label": "Flask/API", "onAutoForward": "silent"},
     "8888": {"label": "Jupyter", "onAutoForward": "notify"}
   },
-  "postCreateCommand": "echo '✨ uv is installed! Use: uv sync --dev'",
+  "postCreateCommand": "pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt && echo 'Legacy PyTorch stack installed on Python 3.10. Run: make notebook'",
+  "updateContentCommand": "pip install --no-cache-dir -r requirements.txt",
   "remoteUser": "dev"
 }
